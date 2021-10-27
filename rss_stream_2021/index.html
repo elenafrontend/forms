@@ -9,11 +9,10 @@
 </head>
 <body>
   
-  <form class="telegram-form" action="./result" method="get">
+  <form class="telegram-form" name="telegram" action="./result" method="get" id="telegram-register">
     <legend>Please, register to Telegram</legend>
     
     <fieldset class="questions">
-
       <label for="name-input">Enter name</label>
       <input type="text" name="name" id="name-input" required>
 
@@ -21,10 +20,10 @@
       <input type="email" name="email" id="email-input" required>
       
       <label for="password-input">Enter password</label>
-      <input type="password" name="password" id="password-input" required>
+      <input type="text" name="password" id="password-input" required>
       
       <label for="confirm-password-input">Confirm password</label>
-      <input type="password" name="confirm-password" id="confirm-password-input">
+      <input type="text" name="confirm-password" id="confirm-password-input">
 
       <label for="country-select">Select your country</label>
       <select name="country" id="country-select">
@@ -49,13 +48,15 @@
 
       <input type="checkbox" name="accept" id="checkbox" required>
       <label for="checkbox">Accept terms and services</label>
-
     </fieldset>
 
     <button type="submit">Submit</button>
     <button type="reset">Reset</button>
+    
+    <div id="result"></div>
   </form>
+
   
-  <script src=""></script>
+  <script src="script.js"></script>
 </body>
 </html>
