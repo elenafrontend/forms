@@ -85,4 +85,8 @@ label em {
   right: 5px;
   top: 20px;
 }
+
+option:first-child {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
