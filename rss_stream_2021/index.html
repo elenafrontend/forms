@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms - RSS stream 2021</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <form class="telegram-form" action="./result" method="get">
+    <legend>Please, register to Telegram</legend>
+    
+    <fieldset class="questions">
+
+      <label for="name-input">Enter name</label>
+      <input type="text" name="name" id="name-input" required>
+
+      <label for="email-input">Enter email</label>
+      <input type="email" name="email" id="email-input" required>
+      
+      <label for="password-input">Enter password</label>
+      <input type="password" name="password" id="password-input" required>
+      
+      <label for="confirm-password-input">Confirm password</label>
+      <input type="password" name="confirm-password" id="confirm-password-input">
+
+      <label for="country-select">Select your country</label>
+      <select name="country" id="country-select">
+        <option value="by">Belarus</option>
+        <option value="ru">Russian</option>
+        <option value="uk">Ukraine</option>
+        <option value="us">USA</option>
+        <option value="uk">United Kingdom</option>
+      </select>
+
+      <label for="language-select">Select language</label>
+      <input type="text" name="language" id="language-select" list="languages" required>
+      <!-- может быть в любой части верстки, отдельно от input -->
+      <datalist id="languages">
+        <!-- If the value attribute is omitted, the content of the <option> element is used as the select box's value -->
+        <option>English</option>
+        <option>Russian</option>
+      </datalist>
+
+      <label for="color-input">Select Background color</label>
+      <input type="color" name="color" id="color-input">
+
+      <input type="checkbox" name="accept" id="checkbox" required>
+      <label for="checkbox">Accept terms and services</label>
+
+    </fieldset>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+  
+  <script src=""></script>
+</body>
+</html>
